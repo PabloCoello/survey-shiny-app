@@ -2,14 +2,12 @@ library(shiny)
 library(jsonlite)
 library(rdrop2)
 
-#token <- drop_auth()
-#saveRDS(token, file="token.rds")
 
 ui <- fluidPage(
     selectInput(
         inputId = "lang",
         label = "Choose a language",
-        choices = c(Español="sp", Français="fr", Português="pt")
+        choices = c(Spanish="sp", French="fr", Portuguese="pt")
     ),
     uiOutput("tab")
 )
